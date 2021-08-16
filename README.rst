@@ -3,13 +3,20 @@
 .. |conda-badge| image:: https://anaconda.org/conda-forge/python-rocksdb/badges/installer/conda.svg
    :target: https://anaconda.org/conda-forge/python-rocksdb
 
+Before first note
+=================
+
+The [python-rocksdb](https://github.com/twmht/python-rocksdb) repo has no
+binary packages. This repo provides binary python wheels statically linked with
+rocksdb.
+
 Note
 =========
 The original pyrocksdb (https://pypi.python.org/pypi/pyrocksdb/0.4) has not been updated for long time. I update pyrocksdb to support the latest rocksdb. Please open issues in github if you have any problem.
 
 News (2019/04/18)
 =========
-Currently I am refactoring the code, and more features like TTL are coming soon. And the installation with cmake will be much more easily. 
+Currently I am refactoring the code, and more features like TTL are coming soon. And the installation with cmake will be much more easily.
 
 News (2019/04/19)
 =========
