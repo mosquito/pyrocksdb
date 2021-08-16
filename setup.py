@@ -50,9 +50,10 @@ if all(map(os.path.exists, STATIC_LIBRARIES)):
 
 setup(
     name="python-rocksdb-static",
-    version='0.7.0',
-    description="Python bindings for RocksDB",
+    version='0.7.1',
     keywords='rocksdb',
+    description="Python bindings for RocksDB",
+    long_description=open("README.rst").read(),
     author='Ming Hsuan Tu',
     author_email="qrnnis2623891@gmail.com",
     url="https://github.com/twmht/python-rocksdb",
@@ -74,6 +75,6 @@ setup(
         "doc": ['sphinx_rtd_theme', 'sphinx'],
         "test": ['pytest'],
     },
-    include_package_data=True,
+    include_package_data=False,
     zip_safe=False,
 )
