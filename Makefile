@@ -2,23 +2,18 @@ all: src/rocksdb/librocksdb.a
 
 src/rocksdb/libsnappy.a:
 	make -C src/rocksdb libsnappy.a
-	strip src/rocksdb/libsnappy.a
 
 src/rocksdb/liblz4.a:
 	make -C src/rocksdb liblz4.a
-	strip src/rocksdb/liblz4.a
 
 src/rocksdb/libbz2.a:
 	make -C src/rocksdb libbz2.a
-	strip src/rocksdb/libbz2.a
 
 src/rocksdb/libzstd.a:
 	make -C src/rocksdb libzstd.a
-	strip src/rocksdb/libzstd.a
 
 src/rocksdb/libz.a:
 	make -C src/rocksdb libz.a
-	strip src/rocksdb/libz.a
 
 snappy: src/rocksdb/libsnappy.a
 lz4: src/rocksdb/liblz4.a
