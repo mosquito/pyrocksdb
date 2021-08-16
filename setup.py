@@ -16,6 +16,7 @@ else:
 
 extra_compile_args = [
     '-std=c++11',
+    '-fPIC',
     '-O3',
     '-Wall',
     '-Wextra',
