@@ -16,6 +16,7 @@ else:
 
 extra_compile_args = [
     '-std=c++11',
+    '-fPIC',
     '-O3',
     '-Wall',
     '-Wextra',
@@ -49,9 +50,11 @@ if all(map(os.path.exists, STATIC_LIBRARIES)):
 
 setup(
     name="python-rocksdb-static",
-    version='0.7.0',
-    description="Python bindings for RocksDB",
+    version='0.7.2',
     keywords='rocksdb',
+    description="Python bindings for RocksDB",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     author='Ming Hsuan Tu',
     author_email="qrnnis2623891@gmail.com",
     url="https://github.com/twmht/python-rocksdb",
@@ -73,6 +76,6 @@ setup(
         "doc": ['sphinx_rtd_theme', 'sphinx'],
         "test": ['pytest'],
     },
-    include_package_data=True,
+    include_package_data=False,
     zip_safe=False,
 )
