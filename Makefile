@@ -1,5 +1,7 @@
 all: src/rocksdb/librocksdb.a
 
+JOBS=8
+
 src/rocksdb/libsnappy.a:
 	make -C src/rocksdb libsnappy.a
 
@@ -22,4 +24,11 @@ zstd: src/rocksdb/libzstd.a
 zlib: src/rocksdb/libz.a
 
 src/rocksdb/librocksdb.a: zlib zstd bz2 lz4 snappy
-	CMAKE_BUILD_PARALLEL_LEVEL=8 make -C src/rocksdb static_lib
+	make \
+		-j $(JOBS) \
+		-e EXTRA_CXXFLAGS="-fPIC" \
+		-e EXTRA_CFLAGS="-fPIC" \
+		-C src/rocksdb static_lib
+
+clean:
+	make -C src/rocksdb clean
