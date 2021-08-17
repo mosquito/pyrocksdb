@@ -78,7 +78,7 @@ jobs:
       - name: Make static library files
         uses: docker://quay.io/pypa/manylinux2014_x86_64
         with:
-          args: /usr/bin/make -j 4
+          args: /usr/bin/make
 
       - name: Install requires
         run: python -m pip install cython twine wheel
