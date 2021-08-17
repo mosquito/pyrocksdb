@@ -50,7 +50,7 @@ if all(map(os.path.exists, STATIC_LIBRARIES)):
 
 setup(
     name="python-rocksdb-static",
-    version='0.7.1',
+    version='0.7.2',
     keywords='rocksdb',
     description="Python bindings for RocksDB",
     long_description=open("README.md").read(),
