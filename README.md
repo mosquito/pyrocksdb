@@ -8,4 +8,4 @@ The [python-rocksdb](https://github.com/twmht/python-rocksdb) repo has no
 binary packages.
 
 See complete documentation 
-(here)[http://python-rocksdb.readthedocs.io/en/latest/].
+[here](http://python-rocksdb.readthedocs.io/en/latest/).
