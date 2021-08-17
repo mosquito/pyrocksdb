@@ -76,7 +76,7 @@ jobs:
           submodules: recursive
 
       - name: Make static library files
-        run: make
+        run: make -j 4
 
       - name: Install requires
         run: python -m pip install cython twine wheel
