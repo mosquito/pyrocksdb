@@ -48,7 +48,7 @@ jobs:
       - name: Cache .a files
         uses: actions/cache@v2
         with:
-          key: ${{ runner.os }}
+          key: ${{ runner.os }}-v1
           path: |
             src/rocksdb/libsnappy.a
             src/rocksdb/liblz4.a
@@ -90,7 +90,7 @@ jobs:
       - name: Cache .a files
         uses: actions/cache@v2
         with:
-          key: ${{ runner.os }}
+          key: ${{ runner.os }}-v1
           path: |
             src/rocksdb/libsnappy.a
             src/rocksdb/liblz4.a
